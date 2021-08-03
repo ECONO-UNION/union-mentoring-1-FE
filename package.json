@@ -1,0 +1,21 @@
+{
+  "name": "union-mentoring-1-fe",
+  "version": "1.0.0",
+  "description": "## Ground Rule 규칙1. 닉네임으로 서로를 호칭한다. why? => 저는 그저 여러분 보다 한 발짝 앞서 있는 주니어 개발자에요. 제 말이 여러분이 무조건 옳다고 생각하면 안 돼요. 자기 생각을 잘 밝힐 수 있는 개발자가 돼었으면 합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:sprint1-basic": "node ./sprint1/basic",
+    "start:sprint1-advanced": "node ./sprint1/advanced"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ECONO-UNION/union-mentoring-1-FE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ECONO-UNION/union-mentoring-1-FE/issues"
+  },
+  "homepage": "https://github.com/ECONO-UNION/union-mentoring-1-FE#readme"
+}
