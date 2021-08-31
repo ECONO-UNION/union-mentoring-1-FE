@@ -7,10 +7,10 @@ const Process = function () {
     const testcases = ["1600s m", "1h35m s", "3d h", "3837s h", "1400s", "1700H m"];
     testcases.forEach(tc => {
         try {
-            let time = new Time(tc.split(' ')[0]).totalSec;
-            let unit = tc.split(' ')[1];
-            let timeConverter = new TimeConverter(time, unit);
-            let convertedTime = timeConverter.convertTime();
+            const time = new Time(tc.split(' ')[0]).totalSec;
+            const unit = tc.split(' ')[1];
+            const timeConverter = new TimeConverter(time, unit);
+            const convertedTime = timeConverter.convertTime();
             Log.log(convertedTime);
         }
         catch (err) {

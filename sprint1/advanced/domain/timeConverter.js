@@ -28,19 +28,19 @@ class TimeConverter {
     }
 
     convertToMinute(time) {
-        let minute = parseInt(time / 60, 10);
+        const minute = parseInt(time / 60, 10);
         this.convertedTime.setTime('m', minute);
         this.convertedTime.setTime('s', time % 60);
     }
 
     convertToHour(time) {
-        let hour = parseInt(time / 3600, 10);
+        const hour = parseInt(time / 3600, 10);
         this.convertedTime.setTime('h', hour);
         this.convertToMinute(time % 3600);
     }
 
     convertToDay(time) {
-        let day = parseInt(time / 86400, 10);
+        const day = parseInt(time / 86400, 10);
         this.convertedTime.setTime('d', day);
         this.convertToHour(time % 86400);
     }

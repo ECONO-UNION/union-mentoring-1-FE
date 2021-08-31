@@ -1,3 +1,6 @@
+const TimeHelper = require("./timeHelper.js");
+
+const units = ['d', 'h', 'm', 's'];
 class Time {
     constructor(str) { // '1600m'
         this.day = 0;
@@ -9,18 +12,8 @@ class Time {
     }
 
     makeTotalSecond(str) {
-        const units = ['d', 'h', 'm', 's'];
-        let values = {};
         if (str) { // 입력값, 단위 분리. '1600m' -> 1600 'm'
-            this.checkInputError(str, units);
-            units.forEach(unit => {
-                let value = 0;
-                if (str.indexOf(unit) !== -1) {
-                    value = parseInt(str.split(unit)[0]);
-                    str = str.split(unit)[1];
-                }
-                values[unit] = value;
-            });
+            const values = TimeHelper(str, units);
             this.day = values.d;
             this.hour = values.h;
             this.min = values.m;
@@ -45,14 +38,7 @@ class Time {
         return dayStr + hourStr + minStr + secStr;
     }
 
-    checkInputError(string, unitArray) {
-        console.log(string);
-        const characters = string.split('');
-        characters.forEach(c => {
-            if (isNaN(c) && !unitArray.includes(c))
-                throw new Error("허용하지 않는 단어가 존재합니다.");
-        });
-    }
+
 }
 
 module.exports = Time;
