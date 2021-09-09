@@ -5,13 +5,9 @@
 // accumulator = array[0]
 
 const customReduce = (array, func, initialValue) => {
-    let accumulator = initialValue;
     let currentValue;
     let idx = 0;
-
-    if (!accumulator) { // initialValue가 없으면
-        accumulator = array[idx++];
-    }
+    let accumulator = initialValue ?? array[idx++];
 
     while (idx < array.length) {
         currentValue = array[idx++];
