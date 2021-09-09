@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:sprint1-basic": "node ./sprint1/basic",
-    "start:sprint1-advanced": "node ./sprint1/advanced"
+    "start:sprint1-advanced": "node ./sprint1/advanced",
+    "start:sprint2-basic": "node ./sprint2/basic",
+    "start:sprint2-advanced": "node ./sprint2/advanced"
   },
   "repository": {
     "type": "git",
