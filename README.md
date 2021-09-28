@@ -22,3 +22,13 @@ why? => 질문을 할 준비를 해보자.
    - task들을 나누어 만들것입니다.
 - rucy => rucy
 - mimmi => mimmi
+
+
+## 진행내뇽
+학습
+1. sprint1 : 자바스크립트 기본 이해
+2. sprint2 : ES6
+
+프로젝트
+1. 디지털 시계
+2. hangman (진행중)
