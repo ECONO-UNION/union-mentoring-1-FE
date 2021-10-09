@@ -1,0 +1,61 @@
+#answer-input{
+    border :1px solid #dddddd;
+    width:200px;
+    padding : 10px;
+}
+ #answer-input :focus{
+     outline : none;
+ }
+
+ #game-input-btn{
+     padding:10px;
+     border:none;
+     background-color: black;
+     color: white;
+ }
+
+ .game-start-box{
+     width:100vw;
+     justify-content: center;
+     flex-direction: column;
+     align-items:center;
+     gap: 20px;
+     height:100vh;
+     display: flex;
+ }
+
+ #opportunity-text{
+     font-size: 48pt;
+     font-weight: bold;
+ }
+
+ .alphabet-marker{
+     display: inline-block;
+     background-color: coral;
+     font-size: 36pt;
+     width: 48pt;
+     height: 48pt;
+     border-bottom: 10px solid #000000;
+
+ }
+
+ .blank{
+     display: inline-block;
+     width: 20px;
+     height: 48pt;
+ }
+
+ .answerer-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap:80px;
+     width: 100vw;
+     height: 100vh;
+ }
+
+ .alphabet-marker-box{
+     margin-bottom: 200px;
+
+ }
